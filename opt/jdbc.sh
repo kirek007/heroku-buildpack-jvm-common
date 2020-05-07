@@ -55,9 +55,9 @@ set_jdbc_url() {
     "postgres")
       modified_schema="jdbc:postgresql"
 
-      if [[ "${CI:-}" != "true" ]]; then
-        query_parameters["sslmode"]="require"
-      fi
+#       if [[ "${CI:-}" != "true" ]]; then
+#         query_parameters["sslmode"]="require"
+#       fi
       ;;
     "mysql")
       modified_schema="jdbc:mysql"
